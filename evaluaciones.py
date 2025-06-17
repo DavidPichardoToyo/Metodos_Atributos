@@ -10,4 +10,13 @@ pizza1 = Pizza()
 
 pizza1.realizar_pedido()
 
-Pizza.validar
+print(f"""
+Resumen del pedido:
+Proteína: {pizza1.proteina}
+Vegetales: {pizza1.vegetales}
+Masa: {pizza1.masa}
+¿Es una pizza válida?: {pizza1.valida}
+""")
+
+Pizza.valida
+

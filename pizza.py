@@ -18,7 +18,7 @@ class Pizza:
         self.vegetal2 = input("Elige otro vegetal (tomate / aceituna / champiñones) :").lower()
         self.masa = input("Elige tipo de masa (tradicional / delgada) :").lower()
 
-        ingredientes_vegetales = [self.vegetal1, self.vegetal2]
+        self.vegetales = [self.vegetal1, self.vegetal2]
 
         valido_proteina = Pizza.validar(self.proteina, ingredientes["proteinas"])
         valido_vegetal1 = Pizza.validar(self.vegetal1, ingredientes["vegetales"])
@@ -27,8 +27,4 @@ class Pizza:
 
         self.valida = valido_proteina and valido_vegetal1 and valido_vegetal2 and valido_masa
 
-        print("Resumen del pedido : ")
-        print("Proteína :", self.proteina)
-        print("Vegetales :", ingredientes_vegetales)
-        print("Masa : ", self.masa)
-        print("¿Es una pizza válida? : ", self.valida)
+       
